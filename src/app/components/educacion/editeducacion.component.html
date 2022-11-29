@@ -1,0 +1,39 @@
+<section class="vh-100 gradient-custom" *ngIf="educacion">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="card " style="border-radius: 3rem;">
+                <div class="card-body p-3 text-center">
+
+                    <div class="mb-md-8 mt-md-4 pb-5">
+
+
+                        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
+                            <div class="form-outline form-white mb-4">
+                                <label for="nombreE ">
+                                    <h5>Institución</h5>
+                                </label>
+                                <input type="text" class="form-control" id="nombreE" name="nombreE"
+                                    [(ngModel)]="educacion.nombreE" required>
+                            </div>
+
+                            <div class="form-outline form-white mb-4">
+                                <label for="descripcionE ">
+                                    <h5>Descripción de los Estudios</h5>
+                                </label>
+                                <input type="text" class="form-control" id="descripcionE" name="descripcionE"
+                                    [(ngModel)]="educacion.descripcionE" required>
+                            </div>
+
+
+                            <button class="btn btn-outline-primary btn-lg px-5" type="submit">Editar</button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,56 @@
+<section class="vh-100 gradient-custom" *ngIf="persona">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="card " style="border-radius: 3rem;">
+                <div class="card-body p-1 text-center">
+
+                    <div class="mb-md-8 mt-md-4 pb-5">
+
+
+                        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
+                            <div class="form-outline form-white mb-4">
+                                <label for="nombre ">
+                                    <h5>Nombre/s</h5>
+                                </label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required="">
+                            </div>
+
+                            <div class="form-outline form-white mb-4">
+                                <label for="apellido ">
+                                    <h5>Apellido/s</h5>
+                                </label>
+                                <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required="">
+                            </div>
+
+                            <div class="form-outline form-white mb-4">
+                                <label for="descripcion ">
+                                    <h5>Nombre del Titulo</h5>
+                                </label>
+                                <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="persona.descripcion" required="">
+                            </div>
+
+                            <div class="form-outline form-white mb-4">
+                                <label for="img ">
+                                    <h5>Foto de Perfil</h5>
+                                </label>
+                                <input type="file" class="form-control" id="img" name="img" [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png, .gif,">
+                            </div>
+
+                            <div class="imagen">
+                                <img [src]="imageService.url" width="150px">
+                            </div>
+                            <br>
+
+
+                            <button class="btn btn-outline-primary btn-lg px-5" type="submit">Editar</button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

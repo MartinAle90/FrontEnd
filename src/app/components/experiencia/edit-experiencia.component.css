@@ -1,0 +1,15 @@
+.gradient-custom {
+    background: linear-gradient(to right, rgb(161, 181, 210), rgb(116, 144, 204));
+    }
+
+.card{
+    background-color:  rgb(188, 197, 209);
+    border-color: white;
+}
+
+.form-outline{
+    text-shadow: white 0.1em 0.1em 0.2em;
+    font-size: large;
+    
+}
+

@@ -1,0 +1,20 @@
+<div class="row gx-0">
+    <div class="container">
+        <div class="logo">
+            <img src="../../../assets/APLogo.png" id="logoAp">
+        </div>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/mart%C3%ADn-alejandro-daza-5980a1160"><img src="../../../assets/linkedin.png" id="linkedin"></a>
+            <a href="https://twitter.com/martindaza"><img src="../../../assets/twitter.png" id="twitter"></a>
+            <a href="https://www.instagram.com/martinale90/"><img src="../../../assets/instagram.png" id="instagram"></a>
+            <a href="https://github.com/MartinAle90"><img src="../../../assets/github.png" id="github"></a>
+            <a href="https://www.facebook.com/martin.daza/"><img src="../../../assets//facebook.png" id="facebook"></a>
+        </div>
+        <div class="out-btn">
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESSION</button>
+
+        </div>
+    </div>
+</div>
+

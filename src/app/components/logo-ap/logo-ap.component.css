@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0 0 32px 0;
+    background: #00358e;
+}
+
+.redes{
+    margin-right: 0px;
+    
+}
+
+#logoAp{
+    width: 150px;
+}
+
+img{
+    width: 45px;
+    margin: 2px;
+}
+
+.btn{
+    border-width: medium;
+}
+
+/* Celular*/
+@media (max-width: 575px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .redes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .out-btn{
+        padding: 30px;
+    }
+}

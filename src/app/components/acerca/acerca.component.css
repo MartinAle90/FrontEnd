@@ -1,0 +1,72 @@
+.row{
+    padding: 0px;
+    grid-row: auto ;
+}
+
+div{
+    text-align: center;
+}
+
+/*Estilo de la foto de perfil*/
+@media(min-width: 575px){
+    #fotodeperfil{
+        transform: translate(0%,-50%);
+        width: 200px;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 0%;
+        top: 300px;
+    }
+}
+@media(max-width: 575px){
+    #fotodeperfil{
+        transform: translate(0%, -50%);
+        width: 150px;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 0%;
+        top: 490px;
+
+    }
+}
+
+
+/*etiqueta nombre*/
+.nombreytitulo{
+    font-weight: bold;
+    transform: translate(0%,0%);
+    margin-top: -45px;
+
+}
+
+.acercademi{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nombretituloboton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0%,-80%);
+
+}
+
+.editbutton1{
+    margin-top: -50px;
+    margin-left: 10px;
+
+}
+
+.editbutton2{
+    display: inline-block;
+
+}
+
+.titulo{
+    display:contents
+}
+

@@ -1,0 +1,35 @@
+.row{
+    padding: 20px;
+}
+
+.titulo{
+    display:flex;
+    margin-left: 10px;
+    color: white;
+}
+
+.addbutton{
+    text-align: center;
+    margin-top: -2px;
+    padding-left: 10px;
+    
+}
+
+.table{
+    width: 98%;
+}
+
+.tabla{
+    vertical-align: middle;
+}
+
+.card{
+    border-radius: 15px;
+background: #a1b5d2;
+}
+
+.card-title{
+    background: #00358e;
+    border-radius: 15px;
+
+}
