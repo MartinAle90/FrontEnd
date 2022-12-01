@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "frontendmad90"
-  }
+    "default": "portfolioapmad90",
+    "portfolioapmad90": "portfolioapmad90"
+  },
+  "targets": {},
+  "etags": {}
 }
